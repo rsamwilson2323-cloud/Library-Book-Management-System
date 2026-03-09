@@ -1,99 +1,125 @@
-📚 Book Store Management System (C++)
+# 📚 Book Store Management System (C++)
 
-A simple Book Store Management System built using C++ and Object-Oriented Programming (OOP) concepts.
-This program allows users to manage books in a store, handle sales, process returns, and store data using file handling.
+Book Store Management System is a simple console-based application built using **C++ and Object-Oriented Programming (OOP)** concepts.
 
-The system stores book information in a text file so that the data remains saved even after the program is closed.
+This program allows users to **manage books in a store, handle sales, process returns, and store book data using file handling**. All book information is saved in a text file so that data remains available even after the program is closed.
 
-🚀 Features
+---
 
-➕ Add new books
+# ✨ Features
 
-📖 Display all available books
+➕ **Add new books**
 
-🔍 Search books by:
+📖 **Display all available books**
 
-Book ID
+🔍 **Search books by**
 
-Book Name
+* Book ID
+* Book Name
+* Author Name
 
-Author Name
+💰 **Sales system with bill generation**
 
-💰 Sales system with bill generation
+🔄 **Return books and update stock**
 
-🔄 Return books and update stock
-
-💾 File handling to save and load data automatically
+💾 **File handling** to save and load data automatically
 
 📊 Track:
 
-Available stock
+* Available stock
+* Sold quantity
+* Returned quantity
 
-Sold quantity
+---
 
-Returned quantity
+# 🧠 Concepts Used
 
-🧠 Concepts Used
+This project demonstrates several important **C++ programming concepts**:
 
-This project demonstrates several important C++ programming concepts:
+* Object-Oriented Programming (OOP)
+* Classes and Objects
+* Vectors
+* File Handling (`fstream`)
+* String Streams
+* Data Persistence
+* Menu Driven Programs
 
-Object Oriented Programming (OOP)
+---
 
-Classes and Objects
+# 📂 Project Structure
 
-Vectors
-
-File Handling (fstream)
-
-String Streams
-
-Data Persistence
-
-Menu Driven Programs
-
-📂 Project Structure
+```id="5b9glo"
 Book-Store-Management-System
 │
 ├── main.cpp
 ├── books.txt
 ├── README.md
 └── LICENSE
+```
 
-File Description
-File	Description
-main.cpp	Main source code of the bookstore system
-books.txt	Stores book data permanently
-README.md	Project documentation
-LICENSE	Project license
+---
 
-⚙️ How the Data is Stored
+# 📄 File Description
 
-All book data is saved inside books.txt in the following format:
+| File      | Description                              |
+| --------- | ---------------------------------------- |
+| main.cpp  | Main source code of the bookstore system |
+| books.txt | Stores book data permanently             |
+| README.md | Project documentation                    |
+| LICENSE   | Project license                          |
 
+---
+
+# ⚙️ How Data is Stored
+
+All book data is saved in **books.txt** using the following format:
+
+```id="v4yq9t"
 BookID|BookName|Author|Quantity|Sold|Returned|Rate
+```
 
 Example:
 
+```id="8ne6nt"
 101|C++ Programming|Bjarne Stroustrup|20|5|1|500
 102|Data Structures|Mark Allen Weiss|15|3|0|450
+```
 
-🖥️ How to Run the Program
-Step 1: Compile the Program
+---
 
-Using g++ compiler
+# 🖥️ How to Run the Program
 
+## Step 1 — Compile the Program
+
+Using **g++ compiler**
+
+```id="qu0rqp"
 g++ main.cpp -o bookstore
-Step 2: Run the Program
+```
+
+---
+
+## Step 2 — Run the Program
+
+Linux / Mac:
+
+```id="12msf6"
 ./bookstore
+```
 
-On Windows:
+Windows:
 
+```id="y9vnyl"
 bookstore.exe
+```
 
-📋 Menu Options
+---
 
-When the program runs, you will see the following menu:
+# 📋 Menu Options
 
+When the program starts, the following menu will appear:
+
+```
 BOOK STORE MANAGEMENT SYSTEM
 
 1. Add Book
@@ -102,38 +128,59 @@ BOOK STORE MANAGEMENT SYSTEM
 4. Sales
 5. Return Book
 6. Exit
+```
 
-1️⃣ Add Book
+---
 
-Allows the user to add a new book with details like ID, name, author, quantity, and rate.
+## 1️⃣ Add Book
 
-2️⃣ Show All Books
+Allows the user to add a new book with details such as:
 
-Displays all books available in the store.
+* Book ID
+* Book Name
+* Author
+* Quantity
+* Price
 
-3️⃣ Search Book
+---
 
-Search a book by:
+## 2️⃣ Show All Books
 
-ID
+Displays all books currently available in the store.
 
-Name
+---
 
-Author
+## 3️⃣ Search Book
 
-4️⃣ Sales
+Search for books using:
 
-Generate a bill by selling books and updating stock.
+* Book ID
+* Book Name
+* Author Name
 
-5️⃣ Return Book
+---
 
-Update stock when a customer returns a book.
+## 4️⃣ Sales
 
-6️⃣ Exit
+Allows the user to sell books and generate a **bill while updating the stock**.
 
-Exit the program safely.
+---
 
-💡 Example Bill Output
+## 5️⃣ Return Book
+
+Updates stock when a customer returns a book.
+
+---
+
+## 6️⃣ Exit
+
+Safely closes the program.
+
+---
+
+# 💡 Example Bill Output
+
+```
 ========== BILL ==========
 
 Book: C++ Programming
@@ -142,11 +189,25 @@ Amount: 1000
 
 TOTAL BILL = 1000
 ==========================
+```
 
+---
 
-👨‍💻 Author
+# 👨‍💻 Author
 
-Sam Wilson
-🔗 GitHub: https://github.com/rsamwilson2323-cloud
+**Sam Wilson**
 
-🔗 LinkedIn: https://www.linkedin.com/in/sam-wilson-14b554385
+🌐 GitHub
+https://github.com/rsamwilson2323-cloud
+
+💼 LinkedIn
+https://www.linkedin.com/in/sam-wilson-14b554385
+
+📧 Email
+[rsamwilson2323@gmail.com](mailto:rsamwilson2323@gmail.com)
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
